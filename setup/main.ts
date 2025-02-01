@@ -4,10 +4,12 @@ import Button from "primevue/button";
 import Aura from "@primevue/themes/aura";
 
 export default defineAppSetup(({ app }) => {
+  // TODO: support specifying themes in head matter
+  // FIXME: adding a theme makes headings invisible
   app.use(PrimeVue, {
     theme: {
       preset: Aura,
     },
   });
-  app.component("Button", Button);
+  app.component("PButton", Button);
 });
