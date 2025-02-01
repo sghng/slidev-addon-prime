@@ -24,6 +24,8 @@
     "dev": "slidev"
   },
   "dependencies": {
+    "@primevue/themes": "^4.2.5",
+    "primevue": "^4.2.5"
   },
   "devDependencies": {
     "@slidev/cli": "^51.1.0",
