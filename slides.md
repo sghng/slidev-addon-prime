@@ -1,8 +1,3 @@
----
-addons:
-  - prime
----
-
 # Preview
 
 ---
@@ -24,16 +19,19 @@ addons:
 
 ## Card
 
-<Card style="width: 50rem; overflow: hidden">
+<Card class="mt-1rem w-4/5 mx-auto">
     <template #header>
-        <img alt="user header" src="https://primefaces.org/cdn/primevue/images/usercard.png" />
+        <img class="w-1/2" alt="user header"
+        src="https://primefaces.org/cdn/primevue/images/usercard.png" />
     </template>
     <template #title>Advanced Card</template>
     <template #subtitle>Card subtitle</template>
     <template #content>
         <p class="m-0">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-            quas!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+            sed consequuntur error repudiandae numquam deserunt quisquam
+            repellat libero asperiores earum nam nobis, culpa ratione quam
+            perferendis esse, cupiditate neque quas!
         </p>
     </template>
     <template #footer>

@@ -10,8 +10,8 @@ export default defineAppSetup(({ app }) => {
       options: {
         // PrimeVue uses system dark mode selector by default, which conflicts
         // with the toggle in Slidev
-        darkModeSelector: ".dark"
-      }
+        darkModeSelector: ".dark",
+      },
     },
   });
 });
