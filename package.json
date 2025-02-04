@@ -1,17 +1,7 @@
 {
   "name": "slidev-addon-prime",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "An addon that brings PrimeVue components to Slidev.",
-  "author": "Samuel Huang",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sghuang19/slidev-addon-prime"
-  },
-  "bugs": {
-    "url": "https://github.com/sghuang19/slidev-addon-prime/issues"
-  },
-  "homepage": "https://github.com/sghuang19/slidev-addon-prime#readme",
   "keywords": [
     "slidev",
     "primevue",
@@ -19,6 +9,16 @@
     "vue",
     "slideshow"
   ],
+  "homepage": "https://github.com/sghuang19/slidev-addon-prime#readme",
+  "bugs": {
+    "url": "https://github.com/sghuang19/slidev-addon-prime/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sghuang19/slidev-addon-prime"
+  },
+  "license": "MIT",
+  "author": "Samuel Huang",
   "type": "module",
   "scripts": {
     "dev": "slidev"
