@@ -3,6 +3,11 @@
 An addon that brings [PrimeVue](https://primevue.org) components to
 [Slidev](https://sli.dev).
 
+## Known Issues
+
+- Additional icon configs specified in `slidev.icons` (e.g. custom icon
+  collections) cannot be resolved.
+
 ## Latest Changes
 
 - **`v0.3.0`:** Added full support for UnoCSS utility classes. No more `!`
