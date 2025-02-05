@@ -15,11 +15,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sghuang19/slidev-addon-prime"
+    "url": "git+https://github.com/sghuang19/slidev-addon-prime.git"
   },
   "license": "MIT",
   "author": "Samuel Huang",
   "type": "module",
+  "files": [
+    "setup/main.ts",
+    "slides.md",
+    "uno.config.ts",
+    "vite.config.ts"
+  ],
   "scripts": {
     "dev": "slidev"
   },
