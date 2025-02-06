@@ -3,6 +3,15 @@
 An addon that brings [PrimeVue](https://primevue.org) components to
 [Slidev](https://sli.dev).
 
+<div align="center">
+  <a href="https://npmjs.com/package/slidev-addon-prime">
+    <img
+      src="https://img.shields.io/npm/v/slidev-addon-prime?color=2B90B6"
+      alt="NPM version"
+    >
+  </a>
+</div>
+
 ## Known Issues
 
 - Additional icon configs specified in `slidev.icons` (e.g. custom icon
