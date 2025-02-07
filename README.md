@@ -14,6 +14,10 @@ An addon that brings [PrimeVue](https://primevue.org) components to
 
 ## Known Issues
 
+- The `uno.config.ts` file in your project will be **overridden** by this addon.
+  If your slides rely on the configurations in that file, consider using this
+  addon in a **"headless" mode** by copying the necessary code directly into
+  your project instead.
 - Additional icon configs specified in `slidev.icons` (e.g. custom icon
   collections) cannot be resolved.
 
