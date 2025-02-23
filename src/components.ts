@@ -1,3 +1,5 @@
+/// <reference path="../types/virtual-prime.d.ts" />
+
 import type { App, DefineComponent } from "vue";
 
 import * as prime from "virtual:prime";
