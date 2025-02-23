@@ -14,14 +14,7 @@ const primePlugin = (): Plugin => {
     load(id) {
       if (id === resolvedVirtualModuleId) {
         return process.env.PRIME_COMPONENTS
-          ? process.env.PRIME_COMPONENTS.split(",")
-              .map((name) => {
-                return (
-                  `export { default as ${name} } ` +
-                  `from "primevue/${name.toLowerCase()}";`
-                );
-              })
-              .join("\n")
+          ? `export { ${process.env.PRIME_COMPONENTS} } from "primevue";`
           : "export default true;"; // truthy default export => no components
       }
     },
