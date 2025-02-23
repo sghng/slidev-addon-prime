@@ -21,8 +21,8 @@
   "author": "Samuel Huang",
   "type": "module",
   "files": [
-    "setup/main.ts",
-    "slides.md",
+    "setup/",
+    "src/",
     "uno.config.ts",
     "vite.config.ts"
   ],
