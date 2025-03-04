@@ -1,37 +1,24 @@
-/// <reference types="@slidev/types" />
+import { type Plugin, defineConfig } from "vite";
 
-import { defineConfig } from "vite";
-import IconsResolver from "unplugin-icons/resolver";
-import { PrimeVueResolver } from "@primevue/auto-import-resolver";
+const primePlugin = (): Plugin => {
+  const virtualModuleId = "virtual:prime";
+  const resolvedVirtualModuleId = "\0" + virtualModuleId;
 
-export default defineConfig({
-  optimizeDeps: {
-    // This is needed otherwise design tokens are not available
-    include: ["primevue/config"],
-  },
-  slidev: {
-    components: {
-      resolvers: [
-        /*
-         * !!! IMPORTANT !!!
-
-         * IconsResolver is required for Slidev to load icons. However, this
-         * config here is unaware of icon sets customized with icon option, and
-         * disables that option as a result.
-         * 
-         * Read more in the following resources:
-         * 
-         * - https://sli.dev/features/icons
-         * - https://github.com/unplugin/unplugin-icons
-         * - https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/vite/components.ts
-         * - https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/vite/index.ts
-         */
-        IconsResolver({
-          prefix: "",
-          customCollections: [],
-        }),
-        PrimeVueResolver(),
-      ],
+  return {
+    name: "prime",
+    resolveId(id) {
+      if (id === virtualModuleId) {
+        return resolvedVirtualModuleId;
+      }
     },
-  },
-});
+    load(id) {
+      if (id === resolvedVirtualModuleId) {
+        return process.env.PRIME_COMPONENTS
+          ? `export { ${process.env.PRIME_COMPONENTS} } from "primevue";`
+          : "export default true;"; // truthy default export => no components
+      }
+    },
+  };
+};
+
+export default defineConfig({ plugins: [primePlugin()] });
