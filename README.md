@@ -12,6 +12,23 @@ An addon that brings [PrimeVue](https://primevue.org) components to
   </a>
 </div>
 
+## Installation
+
+First, install the addon.
+
+```bash
+npm install slidev-addon-prime
+```
+
+Then, add the following frontmatter to your `slides.md`.  
+
+<pre><code>---
+addons:
+  - <b>slidev-addon-prime</b>
+---</code></pre>
+
+[More Information](https://sli.dev/addons/use.html)
+
 ## Known Issues
 
 - The `uno.config.ts` file in your project will be **overridden** by this addon.
