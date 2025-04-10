@@ -20,6 +20,12 @@ First, install the addon.
 npm install slidev-addon-prime
 ```
 
+In case you use pnpm
+
+```bash
+pnpm install slidev-addon-prime
+```
+
 Then, add the following frontmatter to your `slides.md`.  
 
 <pre><code>---
