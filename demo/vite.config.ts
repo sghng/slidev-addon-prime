@@ -1,6 +1,8 @@
+import { type UserConfig } from "vite";
 import { visualizer } from "rollup-plugin-visualizer";
 
 export default {
+  base: "/slidev-addon-prime/",
   plugins: [
     process.env.NODE_ENV !== "production" &&
       visualizer({
@@ -8,4 +10,4 @@ export default {
         gzipSize: true,
       }),
   ],
-};
+} as UserConfig;
