@@ -2,7 +2,7 @@ import { type UserConfig } from "vite";
 import { visualizer } from "rollup-plugin-visualizer";
 
 export default {
-  base: "/slidev-addon-prime/",
+  // base: "/slidev-addon-prime/",
   plugins: [
     process.env.NODE_ENV !== "production" &&
       visualizer({
