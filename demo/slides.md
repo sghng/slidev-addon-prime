@@ -3,8 +3,8 @@ addons:
   - prime
 transition: fade
 fonts:
-  sans: Robot
-  mono: Fira Code
+  sans: JetBrains Mono
+  mono: JetBrains Mono
 ---
 
 # `slidev-addon-prime`
@@ -29,11 +29,10 @@ fonts:
   </p>
 
   <div flex justify-center gap-8 shrink-0>
-    <Image class=""
-      width="250" src="https://sli.dev/logo-title.png"
-    />
-    <Image class="pb-15"
-      width="125" src="https://i2.wp.com/primefaces.org/wp-content/uploads/2019/12/primevue-logo.png"
+    <Image width="250" src="https://sli.dev/logo-title.png" />
+    <Image
+      class="pt-8" width="175"
+      src="https://i2.wp.com/primefaces.org/wp-content/uploads/2019/12/primevue-logo.png"
     />
   </div>
 </div>
