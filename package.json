@@ -27,7 +27,10 @@
     "vite.config.ts"
   ],
   "scripts": {
-    "dev": "slidev"
+    "build": "bun run --cwd=demo build",
+    "dev": "bun --cwd=demo dev",
+    "preview": "bun run --cwd=demo preview",
+    "sort": "bunx sort-package-json"
   },
   "workspaces": [
     "demo"
