@@ -12,28 +12,59 @@ An addon that brings [PrimeVue](https://primevue.org) components to
   </a>
 </div>
 
-## Installation
+## Usage
 
-First, install the addon.
+Install the package, with your package manager of choice:
 
-```bash
-npm install slidev-addon-prime
+```sh
+npm install --save slidev-addon-prime
+pnpm add slidev-addon-prime
+yarn add slidev-addon-prime
+bun add slidev-addon-prime
 ```
 
-In case you use pnpm
+### As a Slidev Addon
 
-```bash
-pnpm install slidev-addon-prime
-```
+Then, enable this addon for your slides using front matter:
 
-Then, add the following frontmatter to your `slides.md`.  
-
-<pre><code>---
+<!-- prettier-ignore -->
+```markdown
+<!-- slides.md -->
+---
 addons:
-  - <b>slidev-addon-prime</b>
----</code></pre>
+  - prime
+---
+# A Slide Show
+...
+```
 
-[More Information](https://sli.dev/addons/use.html)
+Alternatively, you can enable the addon by adding the following property into
+`package.json`:
+
+```json
+{
+  "slidev": {
+    "addons": ["prime"]
+  }
+}
+```
+
+### As a Vue Plugin
+
+> [!WARNING]
+>
+> This mode is only recommended for advanced users who specifically require it.
+> Certain features, such as tree-shaking, are exclusively available in Slidev
+> addon mode.
+
+```ts
+// main/setup.ts
+import prime from "slidev-addon-prime";
+
+export default defineAppSetup(({ app }) => {
+  app.use(prime);
+});
+```
 
 ## Known Issues
 
