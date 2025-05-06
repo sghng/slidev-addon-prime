@@ -23,7 +23,6 @@
   "files": [
     "setup/",
     "src/",
-    "uno.config.ts",
     "vite.config.ts"
   ],
   "scripts": {
