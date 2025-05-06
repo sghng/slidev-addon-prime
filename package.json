@@ -36,15 +36,13 @@
     "demo"
   ],
   "dependencies": {
-    "@primevue/auto-import-resolver": "^4.2.5",
-    "@primevue/themes": "^4.2.5",
-    "primevue": "^4.2.5",
-    "unplugin-vue-components": "^28.0.0"
+    "@primevue/themes": "^4.3.3",
+    "primevue": "^4.3.3"
   },
   "devDependencies": {
-    "@slidev/cli": "^51.1.0",
+    "@slidev/cli": "^51.6.0",
     "@slidev/theme-default": "^0.25.0",
-    "@slidev/types": "^51.1.0",
-    "prettier": "^3.4.2"
+    "@slidev/types": "^51.6.0",
+    "prettier": "^3.5.3"
   }
 }
