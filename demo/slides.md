@@ -1,4 +1,41 @@
-# Preview
+---
+addons:
+  - prime
+transition: fade
+fonts:
+  sans: JetBrains Mono
+  mono: JetBrains Mono
+---
+
+# `slidev-addon-prime`
+
+<div>
+  A <Button label="Slidev" severity="info"/> addon that brings <Button label="PrimeVue"/>
+  components to your slide show.
+</div>
+
+- Author: [Samuel Huang](https://sghuang.com)
+- NPM:
+  [npmjs.com/package/slidev-addon-prime](https://npmjs.com/package/slidev-addon-prime)
+- Repository:
+  [github.com/sghng/slidev-addon-prime](https://github.com/sghng/slidev-addon-prime)
+- Preview: [prime.sghuang.com](https://prime.sghuang.com)
+
+<div flex justify-center items-center>
+  <p shrink class="-translate-y-8">
+    This slideshow demonstrates a few components from Naive UI. For a full demo
+    of all supported components, please visit <a
+    href="https://primevue.org">primevue.org</a>.
+  </p>
+
+  <div flex justify-center gap-8 shrink-0>
+    <Image width="250" src="https://sli.dev/logo-title.png" />
+    <Image
+      class="pt-8" width="175"
+      src="https://i2.wp.com/primefaces.org/wp-content/uploads/2019/12/primevue-logo.png"
+    />
+  </div>
+</div>
 
 ---
 

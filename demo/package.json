@@ -1,0 +1,17 @@
+{
+  "name": "demo",
+  "private": "true",
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@slidev/cli": "^51.1.1",
+    "@slidev/theme-default": "^0.25.0",
+    "slidev-addon-prime": "file:.."
+  },
+  "devDependencies": {
+    "rollup-plugin-visualizer": "^5.14.0"
+  }
+}

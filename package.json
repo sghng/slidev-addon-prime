@@ -9,13 +9,13 @@
     "vue",
     "slideshow"
   ],
-  "homepage": "https://github.com/sghuang19/slidev-addon-prime#readme",
+  "homepage": "https://github.com/sghng/slidev-addon-prime#readme",
   "bugs": {
-    "url": "https://github.com/sghuang19/slidev-addon-prime/issues"
+    "url": "https://github.com/sghng/slidev-addon-prime/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sghuang19/slidev-addon-prime.git"
+    "url": "git+https://github.com/sghng/slidev-addon-prime.git"
   },
   "license": "MIT",
   "author": "Samuel Huang",
@@ -27,8 +27,14 @@
     "vite.config.ts"
   ],
   "scripts": {
-    "dev": "slidev"
+    "build": "bun run --cwd=demo build",
+    "dev": "bun --cwd=demo dev",
+    "preview": "bun run --cwd=demo preview",
+    "sort": "bunx sort-package-json"
   },
+  "workspaces": [
+    "demo"
+  ],
   "dependencies": {
     "@primevue/auto-import-resolver": "^4.2.5",
     "@primevue/themes": "^4.2.5",
