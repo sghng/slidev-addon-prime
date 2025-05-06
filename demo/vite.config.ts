@@ -5,9 +5,6 @@ export default {
   // base: "/slidev-addon-prime/",
   plugins: [
     process.env.NODE_ENV !== "production" &&
-      visualizer({
-        open: true,
-        gzipSize: true,
-      }),
+      visualizer({ open: true, gzipSize: true }),
   ],
 } as UserConfig;
